@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211106 10:39:12.359" rpa="false" schemaversion="2">
+<suite id="s1" name="TesteAutomacaoGoogle" source="/home/operador/Documentos/teste automação google/teste/TesteAutomacaoGoogle.robot">
+<test id="s1-t1" name="abrir google">
+<kw name="acessar pagina principal" library="ResourcesAutomacaoGoogle">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211106 10:39:12.754" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com.br/'.</msg>
+<status status="PASS" starttime="20211106 10:39:12.753" endtime="20211106 10:39:14.160"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211106 10:39:14.161" endtime="20211106 10:39:14.268"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211106 10:39:16.275" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211106 10:39:14.271" endtime="20211106 10:39:16.276"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${imagens}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:16.283" level="INFO">Clicking element '//*[@id="gb"]/div/div[1]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211106 10:39:16.279" endtime="20211106 10:39:16.871"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:12.752" endtime="20211106 10:39:16.872"/>
+</kw>
+<kw name="pesquisar" library="ResourcesAutomacaoGoogle">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${barra de pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:16.874" level="INFO">Clicking element '//*[@id="sbtc"]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211106 10:39:16.873" endtime="20211106 10:39:16.907"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${barra de pesquisa}</arg>
+<arg>got7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:16.909" level="INFO">Typing text 'got7' into text field '//*[@id="sbtc"]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211106 10:39:16.908" endtime="20211106 10:39:17.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211106 10:39:19.030" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211106 10:39:17.029" endtime="20211106 10:39:19.032"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${lupa de pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:19.038" level="INFO">Clicking element '//*[@id="sbtc"]/button'.</msg>
+<status status="PASS" starttime="20211106 10:39:19.034" endtime="20211106 10:39:20.413"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:16.872" endtime="20211106 10:39:20.414"/>
+</kw>
+<kw name="abrir imagem" library="ResourcesAutomacaoGoogle">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${selecionar imagem}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:20.416" level="INFO">Clicking element '//*[@id="islrg"]/div[1]/div[6]/a[1]/div[1]/img'.</msg>
+<status status="PASS" starttime="20211106 10:39:20.416" endtime="20211106 10:39:20.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211106 10:39:24.504" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20211106 10:39:20.503" endtime="20211106 10:39:24.505"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:20.415" endtime="20211106 10:39:24.509"/>
+</kw>
+<kw name="fechar imagem" library="ResourcesAutomacaoGoogle">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fechar imagem}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:24.511" level="INFO">Clicking element '//*[@id="Sva75c"]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211106 10:39:24.510" endtime="20211106 10:39:24.565"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211106 10:39:26.567" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211106 10:39:24.566" endtime="20211106 10:39:26.568"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:24.509" endtime="20211106 10:39:26.569"/>
+</kw>
+<kw name="nova pesquisa jackson wang" library="ResourcesAutomacaoGoogle" sourcename="nova pesquisa ${texto pesquisa}">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${abrir barra de pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:26.574" level="INFO">Clicking element '//*[@id="REsRA"]'.</msg>
+<status status="PASS" starttime="20211106 10:39:26.572" endtime="20211106 10:39:26.665"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${abrir barra de pesquisa}</arg>
+<arg>${texto pesquisa}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:26.668" level="INFO">Typing text 'jackson wang' into text field '//*[@id="REsRA"]'.</msg>
+<status status="PASS" starttime="20211106 10:39:26.666" endtime="20211106 10:39:26.733"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clicar lupa de pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211106 10:39:26.734" level="INFO">Clicking element '//*[@id="BIqFsb"]'.</msg>
+<status status="PASS" starttime="20211106 10:39:26.734" endtime="20211106 10:39:27.690"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211106 10:39:29.691" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211106 10:39:27.690" endtime="20211106 10:39:29.692"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:26.570" endtime="20211106 10:39:29.693"/>
+</kw>
+<status status="PASS" starttime="20211106 10:39:12.750" endtime="20211106 10:39:29.693"/>
+</test>
+<doc>Teste Automacao Google</doc>
+<status status="PASS" starttime="20211106 10:39:12.365" endtime="20211106 10:39:29.695"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TesteAutomacaoGoogle">TesteAutomacaoGoogle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

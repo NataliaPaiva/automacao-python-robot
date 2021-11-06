@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211103 16:34:50.647" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211105 16:14:26.232" rpa="false" schemaversion="2">
 <suite id="s1" name="pedidoTeste" source="/home/operador/Documentos/teste/automacao-python-robot/shopvita/tests/pedidoTeste.robot">
 <test id="s1-t1" name="fazer um pedido">
 <kw name="acessar site" library="pedidoResource">
@@ -7,232 +7,254 @@
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211103 16:34:51.008" level="INFO">Opening browser 'Chrome' to base url 'https://shopvita.com.br/'.</msg>
-<status status="PASS" starttime="20211103 16:34:51.007" endtime="20211103 16:34:52.609"/>
+<msg timestamp="20211105 16:14:26.595" level="INFO">Opening browser 'Chrome' to base url 'https://shopvita.com.br/'.</msg>
+<status status="PASS" starttime="20211105 16:14:26.594" endtime="20211105 16:14:28.664"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211103 16:34:52.610" endtime="20211103 16:34:52.714"/>
+<status status="PASS" starttime="20211105 16:14:28.665" endtime="20211105 16:14:28.769"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211103 16:34:56.717" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20211103 16:34:52.715" endtime="20211103 16:34:56.718"/>
+<msg timestamp="20211105 16:14:32.771" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20211105 16:14:28.770" endtime="20211105 16:14:32.772"/>
 </kw>
-<status status="PASS" starttime="20211103 16:34:51.006" endtime="20211103 16:34:56.721"/>
+<status status="PASS" starttime="20211105 16:14:26.593" endtime="20211105 16:14:32.776"/>
 </kw>
 <kw name="acessar login" library="pedidoResource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${botao entrada}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211103 16:34:56.735" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[2]/div/div[1]/a[2]'.</msg>
-<status status="PASS" starttime="20211103 16:34:56.729" endtime="20211103 16:34:57.786"/>
+<msg timestamp="20211105 16:14:32.786" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[2]/div/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20211105 16:14:32.782" endtime="20211105 16:14:33.771"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211103 16:35:01.789" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20211103 16:34:57.787" endtime="20211103 16:35:01.790"/>
+<msg timestamp="20211105 16:14:37.775" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20211105 16:14:33.773" endtime="20211105 16:14:37.775"/>
 </kw>
-<status status="PASS" starttime="20211103 16:34:56.724" endtime="20211103 16:35:01.793"/>
+<status status="PASS" starttime="20211105 16:14:32.778" endtime="20211105 16:14:37.776"/>
 </kw>
 <kw name="preecher dados" library="pedidoResource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${campo login}</arg>
 <arg>${entrada login}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:01.803" level="INFO">Typing text '07698413926' into text field 'login'.</msg>
-<status status="PASS" starttime="20211103 16:35:01.800" endtime="20211103 16:35:01.912"/>
+<msg timestamp="20211105 16:14:37.779" level="INFO">Typing text '07698413926' into text field 'login'.</msg>
+<status status="PASS" starttime="20211105 16:14:37.778" endtime="20211105 16:14:37.845"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${campo senha}</arg>
 <arg>${entrada senha}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:01.913" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211103 16:35:01.940" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211103 16:35:01.974" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211103 16:35:01.912" endtime="20211103 16:35:01.974"/>
+<msg timestamp="20211105 16:14:37.847" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211105 16:14:37.871" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211105 16:14:37.904" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211105 16:14:37.846" endtime="20211105 16:14:37.904"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${botao entrar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:01.976" level="INFO">Clicking element '//*[@id="__next"]/main/section/div/div/div/div/form/div/div[4]/button'.</msg>
-<status status="PASS" starttime="20211103 16:35:01.975" endtime="20211103 16:35:02.044"/>
+<msg timestamp="20211105 16:14:37.906" level="INFO">Clicking element '//*[@id="__next"]/main/section/div/div/div/div/form/div/div[4]/button'.</msg>
+<status status="PASS" starttime="20211105 16:14:37.905" endtime="20211105 16:14:37.962"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211103 16:35:05.046" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211103 16:35:02.045" endtime="20211103 16:35:05.048"/>
+<msg timestamp="20211105 16:14:40.964" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211105 16:14:37.963" endtime="20211105 16:14:40.965"/>
 </kw>
-<status status="PASS" starttime="20211103 16:35:01.796" endtime="20211103 16:35:05.051"/>
+<status status="PASS" starttime="20211105 16:14:37.776" endtime="20211105 16:14:40.968"/>
 </kw>
 <kw name="procurar produto" library="pedidoResource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${campo pesquisa}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:05.061" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20211103 16:35:05.058" endtime="20211103 16:35:05.164"/>
+<msg timestamp="20211105 16:14:40.978" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211105 16:14:40.975" endtime="20211105 16:14:41.087"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211103 16:35:06.165" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211103 16:35:05.164" endtime="20211103 16:35:06.167"/>
+<msg timestamp="20211105 16:14:42.089" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211105 16:14:41.088" endtime="20211105 16:14:42.090"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${campo pesquisa}</arg>
 <arg>${pesquise}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:06.175" level="INFO">Typing text 'bola' into text field '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20211103 16:35:06.170" endtime="20211103 16:35:06.292"/>
+<msg timestamp="20211105 16:14:42.095" level="INFO">Typing text 'bola' into text field '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211105 16:14:42.091" endtime="20211105 16:14:42.224"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${lupa de pesquisa}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:06.294" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/button'.</msg>
-<status status="PASS" starttime="20211103 16:35:06.293" endtime="20211103 16:35:06.971"/>
+<msg timestamp="20211105 16:14:42.226" level="INFO">Clicking element '//*[@id="__next"]/header/div[2]/div/div[1]/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20211105 16:14:42.225" endtime="20211105 16:14:43.941"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211103 16:35:09.979" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211103 16:35:06.975" endtime="20211103 16:35:09.980"/>
+<msg timestamp="20211105 16:14:46.943" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211105 16:14:43.941" endtime="20211105 16:14:46.944"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${entrar produto}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211103 16:35:09.987" level="INFO">Clicking element '//*[@id="products-show-case-category"]/div/div[3]/div[1]/a/img'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211103 16:35:10.011" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-#0 0x556b1c5ce623 &lt;unknown&gt;
-#1 0x556b1c2d5c27 &lt;unknown&gt;
-#2 0x556b1c2c7e84 &lt;unknown&gt;
-#3 0x556b1c2c8926 &lt;unknown&gt;
-#4 0x556b1c2ca8fd &lt;unknown&gt;
-#5 0x556b1c2c2e2d &lt;unknown&gt;
-#6 0x556b1c2d72f3 &lt;unknown&gt;
-#7 0x556b1c33c5bb &lt;unknown&gt;
-#8 0x556b1c3289e3 &lt;unknown&gt;
-#9 0x556b1c2ffc0c &lt;unknown&gt;
-#10 0x556b1c3010d5 &lt;unknown&gt;
-#11 0x556b1c5f2954 &lt;unknown&gt;
-#12 0x556b1c601f6d &lt;unknown&gt;
-#13 0x556b1c601c8b &lt;unknown&gt;
-#14 0x556b1c6025b2 &lt;unknown&gt;
-#15 0x556b1c63ae8b &lt;unknown&gt;
-#16 0x556b1c602811 &lt;unknown&gt;
-#17 0x556b1c5e7831 &lt;unknown&gt;
-#18 0x556b1c60b218 &lt;unknown&gt;
-#19 0x556b1c60b3aa &lt;unknown&gt;
-#20 0x556b1c6253bf &lt;unknown&gt;
-#21 0x7f19dc47b609 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20211103 16:35:09.997" endtime="20211103 16:35:10.011"/>
-</kw>
-<msg timestamp="20211103 16:35:10.012" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-#0 0x556b1c5ce623 &lt;unknown&gt;
-#1 0x556b1c2d5c27 &lt;unknown&gt;
-#2 0x556b1c2c7e84 &lt;unknown&gt;
-#3 0x556b1c2c8926 &lt;unknown&gt;
-#4 0x556b1c2ca8fd &lt;unknown&gt;
-#5 0x556b1c2c2e2d &lt;unknown&gt;
-#6 0x556b1c2d72f3 &lt;unknown&gt;
-#7 0x556b1c33c5bb &lt;unknown&gt;
-#8 0x556b1c3289e3 &lt;unknown&gt;
-#9 0x556b1c2ffc0c &lt;unknown&gt;
-#10 0x556b1c3010d5 &lt;unknown&gt;
-#11 0x556b1c5f2954 &lt;unknown&gt;
-#12 0x556b1c601f6d &lt;unknown&gt;
-#13 0x556b1c601c8b &lt;unknown&gt;
-#14 0x556b1c6025b2 &lt;unknown&gt;
-#15 0x556b1c63ae8b &lt;unknown&gt;
-#16 0x556b1c602811 &lt;unknown&gt;
-#17 0x556b1c5e7831 &lt;unknown&gt;
-#18 0x556b1c60b218 &lt;unknown&gt;
-#19 0x556b1c60b3aa &lt;unknown&gt;
-#20 0x556b1c6253bf &lt;unknown&gt;
-#21 0x7f19dc47b609 &lt;unknown&gt;
-</msg>
-<msg timestamp="20211103 16:35:10.016" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-#0 0x556b1c5ce623 &lt;unknown&gt;
-#1 0x556b1c2d5c27 &lt;unknown&gt;
-#2 0x556b1c2c7e84 &lt;unknown&gt;
-#3 0x556b1c2c8926 &lt;unknown&gt;
-#4 0x556b1c2ca8fd &lt;unknown&gt;
-#5 0x556b1c2c2e2d &lt;unknown&gt;
-#6 0x556b1c2d72f3 &lt;unknown&gt;
-#7 0x556b1c33c5bb &lt;unknown&gt;
-#8 0x556b1c3289e3 &lt;unknown&gt;
-#9 0x556b1c2ffc0c &lt;unknown&gt;
-#10 0x556b1c3010d5 &lt;unknown&gt;
-#11 0x556b1c5f2954 &lt;unknown&gt;
-#12 0x556b1c601f6d &lt;unknown&gt;
-#13 0x556b1c601c8b &lt;unknown&gt;
-#14 0x556b1c6025b2 &lt;unknown&gt;
-#15 0x556b1c63ae8b &lt;unknown&gt;
-#16 0x556b1c602811 &lt;unknown&gt;
-#17 0x556b1c5e7831 &lt;unknown&gt;
-#18 0x556b1c60b218 &lt;unknown&gt;
-#19 0x556b1c60b3aa &lt;unknown&gt;
-#20 0x556b1c6253bf &lt;unknown&gt;
-#21 0x7f19dc47b609 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20211103 16:35:09.983" endtime="20211103 16:35:10.016"/>
+<msg timestamp="20211105 16:14:46.951" level="INFO">Clicking element '//*[@id="products-show-case-category"]/div/div[3]/div[1]/a/img'.</msg>
+<status status="PASS" starttime="20211105 16:14:46.946" endtime="20211105 16:14:47.855"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20211103 16:35:10.019" endtime="20211103 16:35:10.019"/>
+<msg timestamp="20211105 16:14:49.857" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211105 16:14:47.856" endtime="20211105 16:14:49.858"/>
 </kw>
-<status status="FAIL" starttime="20211103 16:35:05.053" endtime="20211103 16:35:10.022"/>
+<status status="PASS" starttime="20211105 16:14:40.971" endtime="20211105 16:14:49.861"/>
 </kw>
 <kw name="adicionar produto carrinho" library="pedidoResource">
-<status status="NOT RUN" starttime="20211103 16:35:10.023" endtime="20211103 16:35:10.023"/>
-</kw>
-<kw name="fechar pedido" library="pedidoResource">
-<status status="NOT RUN" starttime="20211103 16:35:10.024" endtime="20211103 16:35:10.024"/>
-</kw>
-<kw name="selecionar forma pagamento" library="pedidoResource">
-<status status="NOT RUN" starttime="20211103 16:35:10.025" endtime="20211103 16:35:10.026"/>
-</kw>
-<status status="FAIL" starttime="20211103 16:34:51.003" endtime="20211103 16:35:10.027">WebDriverException: Message: chrome not reachable
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${adicionar carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211105 16:14:49.872" level="INFO">Clicking element 'ADICIONAR AO CARRINHO'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211105 16:14:49.909" level="FAIL">WebDriverException: Message: chrome not reachable
   (Session info: chrome=95.0.4638.69)
 Stacktrace:
-#0 0x556b1c5ce623 &lt;unknown&gt;
-#1 0x556b1c2d5c27 &lt;unknown&gt;
-#2 0x556b1c2c7e84 &lt;unknown&gt;
-#3 0x556b1c2c8926 &lt;unknown&gt;
-#4 0x556b1c2ca8fd &lt;unknown&gt;
-#5 0x556b1c2c2e2d &lt;unknown&gt;
-#6 0x556b1c2d72f3 &lt;unknown&gt;
-#7 0x556b1c33c5bb &lt;unknown&gt;
-#8 0x556b1c3289e3 &lt;unknown&gt;
-#9 0x556b1c2ffc0c &lt;unknown&gt;
-#10 0x556b1c3010d5 &lt;unknown&gt;
-#11 0x556b1c5f2954 &lt;unknown&gt;
-#12 0x556b1c601f6d &lt;unknown&gt;
-#13 0x556b1c601c8b &lt;unknown&gt;
-#14 0x556b1c6025b2 &lt;unknown&gt;
-#15 0x556b1c63ae8b &lt;unknown&gt;
-#16 0x556b1c602811 &lt;unknown&gt;
-#17 0x556b1c5e7831 &lt;unknown&gt;
-#18 0x556b1c60b218 &lt;unknown&gt;
-#19 0x556b1c60b3aa &lt;unknown&gt;
-#20 0x556b1c6253bf &lt;unknown&gt;
-#21 0x7f19dc47b609 &lt;unknown&gt;
+#0 0x562ca09ce623 &lt;unknown&gt;
+#1 0x562ca06d5c27 &lt;unknown&gt;
+#2 0x562ca06c7e84 &lt;unknown&gt;
+#3 0x562ca06c8926 &lt;unknown&gt;
+#4 0x562ca06ca8fd &lt;unknown&gt;
+#5 0x562ca06c2e2d &lt;unknown&gt;
+#6 0x562ca06d72f3 &lt;unknown&gt;
+#7 0x562ca073c5bb &lt;unknown&gt;
+#8 0x562ca07289e3 &lt;unknown&gt;
+#9 0x562ca06ffc0c &lt;unknown&gt;
+#10 0x562ca07010d5 &lt;unknown&gt;
+#11 0x562ca09f2954 &lt;unknown&gt;
+#12 0x562ca0a01f6d &lt;unknown&gt;
+#13 0x562ca0a01c8b &lt;unknown&gt;
+#14 0x562ca0a025b2 &lt;unknown&gt;
+#15 0x562ca0a3ae8b &lt;unknown&gt;
+#16 0x562ca0a02811 &lt;unknown&gt;
+#17 0x562ca09e7831 &lt;unknown&gt;
+#18 0x562ca0a0b218 &lt;unknown&gt;
+#19 0x562ca0a0b3aa &lt;unknown&gt;
+#20 0x562ca0a253bf &lt;unknown&gt;
+#21 0x7f5bb4991609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20211105 16:14:49.884" endtime="20211105 16:14:49.910"/>
+</kw>
+<msg timestamp="20211105 16:14:49.912" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x562ca09ce623 &lt;unknown&gt;
+#1 0x562ca06d5c27 &lt;unknown&gt;
+#2 0x562ca06c7e84 &lt;unknown&gt;
+#3 0x562ca06c8926 &lt;unknown&gt;
+#4 0x562ca06ca8fd &lt;unknown&gt;
+#5 0x562ca06c2e2d &lt;unknown&gt;
+#6 0x562ca06d72f3 &lt;unknown&gt;
+#7 0x562ca073c5bb &lt;unknown&gt;
+#8 0x562ca07289e3 &lt;unknown&gt;
+#9 0x562ca06ffc0c &lt;unknown&gt;
+#10 0x562ca07010d5 &lt;unknown&gt;
+#11 0x562ca09f2954 &lt;unknown&gt;
+#12 0x562ca0a01f6d &lt;unknown&gt;
+#13 0x562ca0a01c8b &lt;unknown&gt;
+#14 0x562ca0a025b2 &lt;unknown&gt;
+#15 0x562ca0a3ae8b &lt;unknown&gt;
+#16 0x562ca0a02811 &lt;unknown&gt;
+#17 0x562ca09e7831 &lt;unknown&gt;
+#18 0x562ca0a0b218 &lt;unknown&gt;
+#19 0x562ca0a0b3aa &lt;unknown&gt;
+#20 0x562ca0a253bf &lt;unknown&gt;
+#21 0x7f5bb4991609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20211105 16:14:49.920" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x562ca09ce623 &lt;unknown&gt;
+#1 0x562ca06d5c27 &lt;unknown&gt;
+#2 0x562ca06c7e84 &lt;unknown&gt;
+#3 0x562ca06c8926 &lt;unknown&gt;
+#4 0x562ca06ca8fd &lt;unknown&gt;
+#5 0x562ca06c2e2d &lt;unknown&gt;
+#6 0x562ca06d72f3 &lt;unknown&gt;
+#7 0x562ca073c5bb &lt;unknown&gt;
+#8 0x562ca07289e3 &lt;unknown&gt;
+#9 0x562ca06ffc0c &lt;unknown&gt;
+#10 0x562ca07010d5 &lt;unknown&gt;
+#11 0x562ca09f2954 &lt;unknown&gt;
+#12 0x562ca0a01f6d &lt;unknown&gt;
+#13 0x562ca0a01c8b &lt;unknown&gt;
+#14 0x562ca0a025b2 &lt;unknown&gt;
+#15 0x562ca0a3ae8b &lt;unknown&gt;
+#16 0x562ca0a02811 &lt;unknown&gt;
+#17 0x562ca09e7831 &lt;unknown&gt;
+#18 0x562ca0a0b218 &lt;unknown&gt;
+#19 0x562ca0a0b3aa &lt;unknown&gt;
+#20 0x562ca0a253bf &lt;unknown&gt;
+#21 0x7f5bb4991609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20211105 16:14:49.868" endtime="20211105 16:14:49.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211105 16:14:49.924" endtime="20211105 16:14:49.924"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${abrir carrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211105 16:14:49.925" endtime="20211105 16:14:49.926"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211105 16:14:49.927" endtime="20211105 16:14:49.928"/>
+</kw>
+<status status="FAIL" starttime="20211105 16:14:49.864" endtime="20211105 16:14:49.931"/>
+</kw>
+<kw name="fechar pedido" library="pedidoResource">
+<status status="NOT RUN" starttime="20211105 16:14:49.933" endtime="20211105 16:14:49.933"/>
+</kw>
+<kw name="selecionar forma pagamento" library="pedidoResource">
+<status status="NOT RUN" starttime="20211105 16:14:49.934" endtime="20211105 16:14:49.934"/>
+</kw>
+<status status="FAIL" starttime="20211105 16:14:26.591" endtime="20211105 16:14:49.936">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x562ca09ce623 &lt;unknown&gt;
+#1 0x562ca06d5c27 &lt;unknown&gt;
+#2 0x562ca06c7e84 &lt;unknown&gt;
+#3 0x562ca06c8926 &lt;unknown&gt;
+#4 0x562ca06ca8fd &lt;unknown&gt;
+#5 0x562ca06c2e2d &lt;unknown&gt;
+#6 0x562ca06d72f3 &lt;unknown&gt;
+#7 0x562ca073c5bb &lt;unknown&gt;
+#8 0x562ca07289e3 &lt;unknown&gt;
+#9 0x562ca06ffc0c &lt;unknown&gt;
+#10 0x562ca07010d5 &lt;unknown&gt;
+#11 0x562ca09f2954 &lt;unknown&gt;
+#12 0x562ca0a01f6d &lt;unknown&gt;
+#13 0x562ca0a01c8b &lt;unknown&gt;
+#14 0x562ca0a025b2 &lt;unknown&gt;
+#15 0x562ca0a3ae8b &lt;unknown&gt;
+#16 0x562ca0a02811 &lt;unknown&gt;
+#17 0x562ca09e7831 &lt;unknown&gt;
+#18 0x562ca0a0b218 &lt;unknown&gt;
+#19 0x562ca0a0b3aa &lt;unknown&gt;
+#20 0x562ca0a253bf &lt;unknown&gt;
+#21 0x7f5bb4991609 &lt;unknown&gt;
 </status>
 </test>
 <doc>teste pedido</doc>
-<status status="FAIL" starttime="20211103 16:34:50.651" endtime="20211103 16:35:10.029"/>
+<status status="FAIL" starttime="20211105 16:14:26.236" endtime="20211105 16:14:49.939"/>
 </suite>
 <statistics>
 <total>
@@ -245,31 +267,31 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211103 16:35:10.012" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+<msg timestamp="20211105 16:14:49.912" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
   (Session info: chrome=95.0.4638.69)
 Stacktrace:
-#0 0x556b1c5ce623 &lt;unknown&gt;
-#1 0x556b1c2d5c27 &lt;unknown&gt;
-#2 0x556b1c2c7e84 &lt;unknown&gt;
-#3 0x556b1c2c8926 &lt;unknown&gt;
-#4 0x556b1c2ca8fd &lt;unknown&gt;
-#5 0x556b1c2c2e2d &lt;unknown&gt;
-#6 0x556b1c2d72f3 &lt;unknown&gt;
-#7 0x556b1c33c5bb &lt;unknown&gt;
-#8 0x556b1c3289e3 &lt;unknown&gt;
-#9 0x556b1c2ffc0c &lt;unknown&gt;
-#10 0x556b1c3010d5 &lt;unknown&gt;
-#11 0x556b1c5f2954 &lt;unknown&gt;
-#12 0x556b1c601f6d &lt;unknown&gt;
-#13 0x556b1c601c8b &lt;unknown&gt;
-#14 0x556b1c6025b2 &lt;unknown&gt;
-#15 0x556b1c63ae8b &lt;unknown&gt;
-#16 0x556b1c602811 &lt;unknown&gt;
-#17 0x556b1c5e7831 &lt;unknown&gt;
-#18 0x556b1c60b218 &lt;unknown&gt;
-#19 0x556b1c60b3aa &lt;unknown&gt;
-#20 0x556b1c6253bf &lt;unknown&gt;
-#21 0x7f19dc47b609 &lt;unknown&gt;
+#0 0x562ca09ce623 &lt;unknown&gt;
+#1 0x562ca06d5c27 &lt;unknown&gt;
+#2 0x562ca06c7e84 &lt;unknown&gt;
+#3 0x562ca06c8926 &lt;unknown&gt;
+#4 0x562ca06ca8fd &lt;unknown&gt;
+#5 0x562ca06c2e2d &lt;unknown&gt;
+#6 0x562ca06d72f3 &lt;unknown&gt;
+#7 0x562ca073c5bb &lt;unknown&gt;
+#8 0x562ca07289e3 &lt;unknown&gt;
+#9 0x562ca06ffc0c &lt;unknown&gt;
+#10 0x562ca07010d5 &lt;unknown&gt;
+#11 0x562ca09f2954 &lt;unknown&gt;
+#12 0x562ca0a01f6d &lt;unknown&gt;
+#13 0x562ca0a01c8b &lt;unknown&gt;
+#14 0x562ca0a025b2 &lt;unknown&gt;
+#15 0x562ca0a3ae8b &lt;unknown&gt;
+#16 0x562ca0a02811 &lt;unknown&gt;
+#17 0x562ca09e7831 &lt;unknown&gt;
+#18 0x562ca0a0b218 &lt;unknown&gt;
+#19 0x562ca0a0b3aa &lt;unknown&gt;
+#20 0x562ca0a253bf &lt;unknown&gt;
+#21 0x7f5bb4991609 &lt;unknown&gt;
 </msg>
 </errors>
 </robot>
